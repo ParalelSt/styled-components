@@ -63,39 +63,43 @@ function Content() {
             </ul>
           </div>
           <div className="lower-section">
-            <div className="shortcuts">
-              <h2>Your shortcuts</h2>
-              <button>Edit</button>
-            </div>
-            <div>
-              <li>
-                <img src="Game2.svg" alt="" />
-                <p>Game</p>
-              </li>
-            </div>
-            <div>
-              <li>
-                <img src="Game2.svg" alt="" />
-                <p>Game</p>
-              </li>
-            </div>
-            <div>
-              <li>
-                <img src="Game2.svg" alt="" />
-                <p>Game</p>
-              </li>
-            </div>
-            <div>
-              <li>
-                <img src="Game2.svg" alt="" />
-                <p>Game</p>
-              </li>
-            </div>
-            <div>
-              <li>
-                <img className="arrow-image" src="Arrow.svg" alt="" />
-                <p>See more</p>
-              </li>
+            <div className="shortcut-container">
+              <div className="shortcuts">
+                <h2>Your shortcuts</h2>
+                <button>Edit</button>
+              </div>
+              <div className="game-shortcuts">
+                <div>
+                  <li>
+                    <img src="Game2.svg" alt="" />
+                    <p>Game</p>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <img src="Game2.svg" alt="" />
+                    <p>Game</p>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <img src="Game2.svg" alt="" />
+                    <p>Game</p>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <img src="Game2.svg" alt="" />
+                    <p>Game</p>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <img className="arrow-image" src="Arrow.svg" alt="" />
+                    <p>See more</p>
+                  </li>
+                </div>
+              </div>
             </div>
             <div className="info">
               <ul>
@@ -127,14 +131,65 @@ function Content() {
                 <li>
                   <a href="#">More</a>
                 </li>
+                <li>
+                  <p className="info-paragraph">
+                    Meta &copy; <span id="year"></span>
+                  </p>
+                </li>
               </ul>
-              <p className="info-paragraph">
-                Meta &copy; <span id="year"></span>
-              </p>
             </div>
           </div>
         </LeftContent>
-        <MiddleContent></MiddleContent>
+        <MiddleContent>
+          <div className="cards">
+            <div className="card">
+              <img className="profile-image" src="Profile.jpg" alt="" />
+              <div>
+                <img className="add-story" src="Plus.svg" alt="" />
+                <p>Create story</p>
+              </div>
+            </div>
+            <div className="card">
+              <img className="card-image" src="Card1.png" alt="" />
+              <img className="card-profile" src="Card1Profile.png" alt="" />
+              <p>Lorem.</p>
+            </div>
+            <div className="card">
+              <img className="card-image" src="Card1.png" alt="" />
+              <img className="card-profile" src="Card1Profile.png" alt="" />
+              <p>Lorem.</p>
+            </div>
+            <div className="card">
+              <img className="card-image" src="Card1.png" alt="" />
+              <img className="card-profile" src="Card1Profile.png" alt="" />
+              <p>Lorem.</p>
+            </div>
+          </div>
+          <div className="middle-container">
+            <div className="upper-section">
+              <div>
+                <img src="Profile.jpg" alt="" />
+                <input placeholder="What's on your mind, Aron?" type="text" />
+              </div>
+            </div>
+            <div className="lower-section">
+              <ul>
+                <li>
+                  <img src="Live.svg" alt="" />
+                  <p>Live video</p>
+                </li>
+                <li>
+                  <img src="Photo.svg" alt="" />
+                  <p>Photo/video</p>
+                </li>
+                <li>
+                  <img src="Smiley.svg" alt="" />
+                  <p>Feeling/activity</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </MiddleContent>
         <RightContent>
           <div className="container">
             <h2>Contacts</h2>

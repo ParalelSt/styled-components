@@ -20,4 +20,5 @@ export const GlobalStyles = createGlobalStyle`
     body {
         background: rgba(202, 202, 202, 0.3);
     }
+
 `;
